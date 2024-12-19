@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install apache2 php git -y
-sudo systemctl enable apache2.service
+sudo systemctl enable apache2
 sudo systemctl start apache2
 sudo git clone https://github.com/reposforlabs/website-automation.git
 sudo cp ./website-automation/* /var/www/html
